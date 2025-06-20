@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KarnGeo Client Portal</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <header>
+    <img src="/static/images/karngeo-logo.png" alt="KarnGeo Logo" class="logo" />
+    <h1>Welcome to KarnGeo Client Portal</h1>
+  </header>
+  <main>
+    <p>Please log in to access your files.</p>
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="Client Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </main>
+</body>
+</html>
