@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -47,5 +48,39 @@
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="mailto:info@karn-geo.co.uk" class="button"&gt;Contact Us&lt;/a&gt;</p>
 <p class="p1">&lt;/body&gt;</p>
 <p class="p1">&lt;/html&gt;</p>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KarnGeo Client Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    h1 { color: #2c3e50; }
+    button {
+      padding: 0.5rem 1rem; margin-top: 1rem;
+      background-color: #3498db; color: white;
+      border: none; cursor: pointer; border-radius: 4px;
+    }
+    button:hover { background-color: #2980b9; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the KarnGeo Client Portal</h1>
+  <button onclick="fetchMessage()">Get Message from API</button>
+  <p id="api-response"></p>
+  <script>
+    async function fetchMessage() {
+      try {
+        const res = await fetch('https://karngeo-client-portal.onrender.com/');
+        const data = await res.json();
+        document.getElementById('api-response').innerText = data.message;
+      } catch (err) {
+        document.getElementById('api-response').innerText = 'Error fetching message.';
+      }
+    }
+  </script>
+>>>>>>> 8cb02fc11a0309a654d4ea21ef2c8985b7b0487a
 </body>
 </html>
