@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Test Page</title>
-  </head>
-  <body>
-    <h1>If you see this, it's working ✅</h1>
-  </body>
-</html>
+<h1>Welcome to the KarnGeo Client Portal</h1>
+<button onclick="fetchMessage()">Get Message from API</button>
+<p id="api-response"></p>
+<script>
+  async function fetchMessage() {
+    try {
+      const res = await fetch('https://karngeo-client-portal.onrender.com/');
+      const data = await res.json();
+      document.getElementById('api-response').innerText = data.message;
+    } catch (err) {
+      document.getElementById('api-response').innerText = 'Error fetching message.';
+    }
+  }
+</script>
