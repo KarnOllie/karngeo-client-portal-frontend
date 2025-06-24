@@ -1,0 +1,30 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+button {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #005aa7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
