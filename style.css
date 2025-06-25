@@ -17,3 +17,7 @@ a {
   max-width: 600px;
   margin: auto;
 }
+.logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
