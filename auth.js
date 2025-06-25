@@ -1,1 +1,1 @@
-console.log('auth logic');
+// JavaScript for auth logic
