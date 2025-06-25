@@ -1,1 +1,1 @@
-// JavaScript for auth logic
+// Auth JS handlers for login/register
